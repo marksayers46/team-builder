@@ -11,7 +11,17 @@ const Form = props => {
           name="name"
           placeholder="name"
           value={newData.name}
-          />
+        />
+        <input
+          name="email"
+          placeholder="email"
+          value={newData.email}
+        />
+        <input
+          name="role"
+          placeholder="role"
+          value={newData.role}
+        />
       </form>
     </div>
   );
