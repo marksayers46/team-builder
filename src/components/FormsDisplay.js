@@ -8,13 +8,13 @@ const FormsDisplay = props => {
     <div className="subTitle">
       <h1>Submitted Forms:</h1>
       <h1>____________________</h1>
-      {passedData.map(banana => {
+      {passedData.map(e => {
         return (
           <div className="card">
             <h1>Member:</h1>
-            <h1>{banana.name}</h1>
-            <h2>{banana.email}</h2>
-            <h2>{banana.role}</h2>
+            <h1>{e.name}</h1>
+            <h2>{e.email}</h2>
+            <h2>{e.role}</h2>
           </div>
         );
       })}
