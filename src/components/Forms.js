@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const Form = props => {
+const Forms = props => {
   const [newData, setNewData] = useState("")
 
   return (
@@ -29,4 +29,4 @@ const Form = props => {
   );
 };
 
-export default Form;
+export default Forms;

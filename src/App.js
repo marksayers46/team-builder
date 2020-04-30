@@ -1,10 +1,27 @@
 import React, { useState } from 'react';
 import './App.css';
-import Form from "./components/Form";
-import userData from './data';
+import Forms from "./components/Forms";
+import FormsDisplay from './components/FormsDisplay';
 
 function App() {
-  const data = userData;
+  const data = [
+    {
+      name: 'Jay Lee Kennedy',
+      email: 'dreampoetlee@gmail.com',
+      role: 'Full-Stack Dev'
+    },
+    {
+      name: 'Aaron Matson',
+      email: 'matsonaaron1@gmail.com',
+      role: 'Full-Stack Dev'
+    },
+    {
+      name: 'Rabah Babaci',
+      email: '4rabah@gmail.com',
+      role: 'Full-Stack Dev'
+    }
+  ];
+
   const [members, setMembers] = useState(data);
 
   const addNewMember = member => {
@@ -13,8 +30,9 @@ function App() {
 
   return (
     <div className="App">
-     <h1>Projects Forms</h1>
-     <Form addNewMember = {addNewMember} />
+     <h1>Project Forms</h1>
+     <Forms addNewMember = {addNewMember} />
+     <FormsDisplay data={members} />
     </div>
   );
 }
